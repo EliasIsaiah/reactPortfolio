@@ -10,7 +10,7 @@ interface Props {
 }
 
 class Repos extends React.Component {
-    constructor(props) {
+    constructor(props: Props) {
         super(props);
         this.state = {
             error: null,
@@ -28,10 +28,11 @@ class Repos extends React.Component {
         })
 // }
 
-render() {
+render: () => {
     return (
         <ul>
-            {this.StaticRange.repos.map(repo => <li>{repo.name}</li>)}
+            {/* {this.StaticRange.repos.map(repo => <li>{repo.name}</li>)} */}
+
         </ul>
     )
 }
