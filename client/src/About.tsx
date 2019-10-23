@@ -23,9 +23,6 @@ export default function PaperSheet(props: Props) {
     <div>
       <Paper className={classes.root}>
         <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
-        </Typography>
-        <Typography component="p">
           { props.value }
         </Typography>
       </Paper>
