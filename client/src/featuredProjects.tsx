@@ -8,15 +8,19 @@ interface Props {
     repos?: string[],
 }
 
+interface FeaturedProject {
+
+}
+
 interface MyState {
     error?: null | string,
     isLoaded?: boolean,
     repos?: string[],
 }
 
-class Repos extends React.Component<Props, MyState> {
+class featuredProjects extends React.Component<Props, MyState> {
     constructor(props: Props) {
-        super(props);
+        super(props); 
         this.state = {
             error: null,
             isLoaded: false,
@@ -49,10 +53,10 @@ class Repos extends React.Component<Props, MyState> {
         return (
 
             <ul>
-                {this.state.repos &&
-                    this.state.repos.map((repo: any) => (
-                        <li key={repo.id}>
-                            {repo.name}
+                {this.state.featuredProjects &&
+                    this.state.featuredProjects.map((featuredProject: any) => (
+                        <li key={featuredProject.id}>
+                            {featuredProject.name}
                         </li>
                     ))
                 }
@@ -61,4 +65,4 @@ class Repos extends React.Component<Props, MyState> {
     }
 }
 
-export default Repos;
+export default featuredProjects;
