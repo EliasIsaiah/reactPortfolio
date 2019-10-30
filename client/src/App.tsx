@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import About from './About';
 import Header from './Header';
 import Repos from './Repos';
